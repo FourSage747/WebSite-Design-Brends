@@ -290,49 +290,40 @@ main {
   background: linear-gradient(to bottom, #70a9ff, #0149b4);
 }
 
-.main-div {
-  position: relative;
-}
-.main-div svg:last-child {
-  position: absolute;
-  right: 20px;
-}
-
 .mediaChanel_status {
   padding: 10px 0;
 }
 .mediaChanel_status .container div {
   position: relative;
+  padding: 18px;
   background-color: #f1f4ff;
   border-radius: 20px;
-  padding: 18px;
   box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
 }
 .mediaChanel_status .container div h3 {
   font-weight: 400;
   font-size: 18px;
   margin: 0;
-  margin-bottom: 76px;
+  margin-bottom: 15px;
 }
-.mediaChanel_status .container div ul:first-of-type {
+.mediaChanel_status .container div ul {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
 }
-.mediaChanel_status .container div ul:first-of-type b {
+.mediaChanel_status .container div ul b {
   font-weight: 400;
   font-size: 18px;
 }
-.mediaChanel_status .container div ul:first-of-type span {
+.mediaChanel_status .container div ul li:first-child span {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 12px;
 }
-.mediaChanel_status .container div ul:last-child {
+.mediaChanel_status .container div p {
   position: absolute;
-  display: flex;
-  gap: 20px;
   top: 18px;
   right: 18px;
+  margin: 0;
 }
 
 .mediaChanel_data {
@@ -372,7 +363,7 @@ main {
   align-items: center;
   justify-content: space-between;
 }
-.mediaChanel_search div div {
+.mediaChanel_search div div:first-child {
   padding: 15px 20px;
   background-color: #f1f4ff;
   border-radius: 20px;
@@ -380,41 +371,27 @@ main {
   font-size: 26px;
   box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
 }
-.mediaChanel_search div ul {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.mediaChanel_search div ul li {
+.mediaChanel_search div div:last-child {
   border-radius: 20px;
   box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
-}
-.mediaChanel_search div ul li:first-child {
-  width: 130px;
+  width: 289px;
+  box-sizing: border-box;
   position: relative;
   padding: 15px 20px;
   background-color: #f1f4ff;
 }
-.mediaChanel_search div ul li:first-child svg {
+.mediaChanel_search div div:last-child svg {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-.mediaChanel_search div ul li:first-child input {
+.mediaChanel_search div div:last-child input {
   width: 100%;
   color: black;
   padding: 0;
   padding-left: 25px;
   border: 0;
   background: transparent;
-}
-.mediaChanel_search div ul li button {
-  width: 180px;
-  border-radius: 20px;
-  border: 0;
-  padding: 15px 30px;
-  background-color: #2e65f3;
-  color: white;
 }
 
 .mediaChanel_offers {
@@ -551,7 +528,7 @@ main {
   align-items: center;
   border-radius: 20px;
   background-color: #2e65f3;
-  padding: 7px;
+  padding: 7px 20px;
   color: white;
 }
 .mediaChanel_offers_list .mediaChanel_offers_list_ul .mediaChanel_offers_list_li ul li:nth-child(6) div {
@@ -582,13 +559,7 @@ main {
   transform: rotate(180deg);
 }
 .mediaChanel_offers_list .mediaChanel_offers_list_ul .mediaChanel_offers_list_li ul li:nth-child(7) {
-  margin-right: 20px;
-}
-.mediaChanel_offers_list .mediaChanel_offers_list_ul .mediaChanel_offers_list_li ul li:nth-child(8) {
-  margin-right: 5px;
-}
-.mediaChanel_offers_list .mediaChanel_offers_list_ul .mediaChanel_offers_list_li ul li:nth-child(9) {
-  margin-right: 5px;
+  margin-right: 40px;
 }
 
 @media screen and (min-width: 1400px) {
@@ -612,13 +583,7 @@ main {
     margin-right: 30px;
   }
   .mediaChanel_offers_list .mediaChanel_offers_list_ul .mediaChanel_offers_list_li ul li:nth-child(7) {
-    margin-right: 30px;
-  }
-  .mediaChanel_offers_list .mediaChanel_offers_list_ul .mediaChanel_offers_list_li ul li:nth-child(8) {
-    margin-right: 15px;
-  }
-  .mediaChanel_offers_list .mediaChanel_offers_list_ul .mediaChanel_offers_list_li ul li:nth-child(9) {
-    margin-right: 15px;
+    margin-right: 50px;
   }
 }
 @media screen and (min-width: 1500px) {
@@ -642,7 +607,7 @@ main {
     margin-right: 50px;
   }
   .mediaChanel_offers_list .mediaChanel_offers_list_ul .mediaChanel_offers_list_li ul li:nth-child(7) {
-    margin-right: 50px;
+    margin-right: 70px;
   }
 }
 .backdrop .modal .modal_desktop_menu {
@@ -720,7 +685,8 @@ footer div {
 .modal form ul {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 15px;
+  justify-content: space-between;
 }
 .modal form ul button {
   display: flex;
@@ -792,7 +758,7 @@ footer div {
     text-align: center;
   }
   .modal form ul button {
-    padding: 10px 32px;
+    padding: 10px 27px;
   }
   .modal form ul li:last-child button svg {
     display: block;

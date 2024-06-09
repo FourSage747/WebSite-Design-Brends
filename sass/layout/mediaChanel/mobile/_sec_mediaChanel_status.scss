@@ -3,32 +3,33 @@
   .container {
     div {
       position: relative;
+      padding: 18px;
       background-color: #f1f4ff;
       border-radius: 20px;
-      padding: 18px;
       box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
       h3 {
         @include font(400, 18px);
         margin: 0;
-        margin-bottom: 76px;
+        margin-bottom: 15px;
       }
-      ul:first-of-type {
+      ul {
         display: flex;
         flex-direction: column;
-        gap: 14px;
+        gap: 12px;
         b {
           @include font(400, 18px);
         }
-        span {
-          @include font(300, 14px);
+        li:first-child {
+          span {
+            @include font(300, 12px);
+          }
         }
       }
-      ul:last-child {
+      p {
         position: absolute;
-        display: flex;
-        gap: 20px;
         top: 18px;
         right: 18px;
+        margin: 0;
       }
     }
   }

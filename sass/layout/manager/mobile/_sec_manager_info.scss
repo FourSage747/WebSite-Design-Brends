@@ -1,10 +1,9 @@
 .manager_info {
-  padding-top: 26px;
+  padding: 26px 0 12px 0;
   div {
     display: flex;
-    flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
-    gap: 18px 10px;
     ul {
       display: flex;
       flex-direction: column;
@@ -23,13 +22,6 @@
       color: white;
       background: linear-gradient(to right, #70a9ff, #0149b4);
       box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.3);
-    }
-  }
-}
-@media screen and (min-width: 768px) {
-  .manager_info {
-    div {
-      align-items: center;
     }
   }
 }

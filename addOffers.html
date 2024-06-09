@@ -38,11 +38,11 @@
           </div>
           <ul class="menu">
             <li>
-              <a href="./manager.html">
+              <a href="./brend.html">
                 <svg width="20" height="20">
                   <use href="./imeges/sprite.svg#icon-Human"></use>
                 </svg>
-                Менеджер
+                Бренд
               </a>
             </li>
             <li class="is-active">
@@ -50,7 +50,7 @@
                 <svg width="20" height="20">
                   <use href="./imeges/sprite.svg#icon-People"></use>
                 </svg>
-                Користувачі
+                Додані офери
               </a>
             </li>
             <li>
@@ -113,11 +113,11 @@
           </a>
         </li>
         <li>
-          <a href="./manager.html">
+          <a href="./brend.html">
             <svg width="20" height="20">
               <use href="./imeges/sprite.svg#icon-Human"></use>
             </svg>
-            Менеджер
+            Бренд
           </a>
         </li>
         <li class="is-active-mobile">
@@ -125,7 +125,7 @@
             <svg width="20" height="20">
               <use href="./imeges/sprite.svg#icon-People"></use>
             </svg>
-            Користувачі
+            Додані офери
           </a>
         </li>
         <li>
@@ -176,7 +176,10 @@
           <svg width="20" height="20">
             <use href="./imeges/sprite.svg#icon-People"></use>
           </svg>
-          Користувачі
+          Додані офери
+          <svg width="16" height="16" data-modal-open="modal2">
+            <use href="./imeges/sprite.svg#icon-plus"></use>
+          </svg>
         </div>
       </section>
       <section class="user_status">
@@ -206,93 +209,6 @@
                 </li>
               </ul>
             </div>
-            <div id="open" class="user_status_hidden_div">
-              <ul class="user_status_hidden_ul1">
-                <li>
-                  <span>Ліди</span><br /><b>601,78</b>
-                  <svg width="20" height="20">
-                    <use href="./imeges/sprite.svg#icon-pencil"></use>
-                  </svg>
-                </li>
-                <li>
-                  <span>Списання</span><br /><b>3002,49</b>
-                  <svg width="20" height="20">
-                    <use href="./imeges/sprite.svg#icon-pencil"></use>
-                  </svg>
-                </li>
-                <li>
-                  <span>Approve</span><br /><b>216</b>
-                  <svg width="20" height="20">
-                    <use href="./imeges/sprite.svg#icon-pencil"></use>
-                  </svg>
-                </li>
-                <li>
-                  <span>Сповіщення</span><br /><b>212</b>
-                  <svg width="20" height="20">
-                    <use href="./imeges/sprite.svg#icon-pencil"></use>
-                  </svg>
-                </li>
-                <li>
-                  <span>Баланс</span><br /><b>216</b>
-                  <svg width="20" height="20">
-                    <use href="./imeges/sprite.svg#icon-settings"></use>
-                  </svg>
-                </li>
-              </ul>
-              <div class="user_status_hidden_ul2">
-                <h3>Платежі</h3>
-                <ul>
-                  <li data-modal-open="modal2">
-                    <svg width="17" height="17">
-                      <use href="./imeges/sprite.svg#icon-pencil"></use>
-                    </svg>
-                  </li>
-                  <li data-modal-open="modal3">
-                    <svg width="17" height="17">
-                      <use href="./imeges/sprite.svg#icon-settings"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg width="17" height="17">
-                      <use href="./imeges/sprite.svg#icon-check"></use>
-                    </svg>
-                  </li>
-                  <li>
-                    <svg width="17" height="17">
-                      <use href="./imeges/sprite.svg#icon-rubish-bin"></use>
-                    </svg>
-                  </li>
-                  <li class="vector" hidden-content-open="open-vector">
-                    <svg width="17" height="17">
-                      <use href="./imeges/sprite.svg#icon-vector-black"></use>
-                    </svg>
-                  </li>
-                </ul>
-                <ul id="open-vector" class="open-vector">
-                  <li><b>Номер</b><br /><span>EKG464SJFN17</span></li>
-                  <li>
-                    <b>Дата рахунку</b><br /><span>10 грудня 2024 р.</span>
-                  </li>
-                  <li><b>Дата оплати</b><br /><span>10 грудня 2024 р</span></li>
-                  <li>
-                    <b>Спосіб оплати</b><br /><span
-                      >0077 **** **** 3814 (Visa)</span
-                    >
-                  </li>
-                  <li><b>Підписка</b><br /><span>Бонус (річний)</span></li>
-                  <li><b>Сума</b><br /><span>$129.88</span></li>
-                  <li><b>Статус</b><span>Прямує до</span></li>
-                </ul>
-              </div>
-              <ul class="user_status_hidden_ul3">
-                <li>Картки</li>
-                <li>5024 3468 1424 2100</li>
-                <li>6090 1234 5678 4509</li>
-              </ul>
-            </div>
-            <button class="button" hidden-content-open="open" type="button">
-              Розгорнути
-            </button>
           </div>
         </div>
       </section>
@@ -318,6 +234,24 @@
           </li>
         </ul>
       </section>
+      <section class="user_search">
+        <div>
+          <div>Додані офери</div>
+          <ul>
+            <li>
+              <svg width="15" height="15">
+                <use href="./imeges/sprite.svg#icon-search"></use>
+              </svg>
+              <input type="text" placeholder="Пошук" />
+            </li>
+            <li>
+              <button type="button" data-modal-open="modal2">
+                Додати офер
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
       <section class="user_offers">
         <ul>
           <li>
@@ -327,25 +261,31 @@
             </svg>
           </li>
           <li>
-            <span>Нікнейм</span>
+            <span>Назва</span>
             <svg width="12" height="6">
               <use href="./imeges/sprite.svg#icon-vector"></use>
             </svg>
           </li>
           <li>
-            <span>Пошта</span>
+            <span>Посилання</span>
+            <svg width="12" height="6">
+              <use href="./imeges/sprite.svg#icon-vector"></use>
+            </svg>
+          </li>
+          <li>
+            <span>Бренд</span>
+            <svg width="12" height="6">
+              <use href="./imeges/sprite.svg#icon-vector"></use>
+            </svg>
+          </li>
+          <li>
+            <span>Виплати</span>
             <svg width="12" height="6">
               <use href="./imeges/sprite.svg#icon-vector"></use>
             </svg>
           </li>
           <li>
             <span>Баланс</span>
-            <svg width="12" height="6">
-              <use href="./imeges/sprite.svg#icon-vector"></use>
-            </svg>
-          </li>
-          <li>
-            <span>Транзакції</span>
             <svg width="12" height="6">
               <use href="./imeges/sprite.svg#icon-vector"></use>
             </svg>
@@ -367,15 +307,12 @@
             >
               <li>
                 <span>112</span>
-                <svg width="26" height="26">
-                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
-                </svg>
               </li>
               <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>wordwall.net</span></li>
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
@@ -430,12 +367,12 @@
                 <li><span>$129.88</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-pencil"></use>
                       </svg>
                     </li>
-                    <li data-modal-open="modal3">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
                       </svg>
@@ -467,15 +404,12 @@
             >
               <li>
                 <span>113</span>
-                <svg width="26" height="26">
-                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
-                </svg>
               </li>
               <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>wordwall.net</span></li>
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
@@ -530,12 +464,12 @@
                 <li><span>$129.88</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-pencil"></use>
                       </svg>
                     </li>
-                    <li data-modal-open="modal3">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
                       </svg>
@@ -567,15 +501,12 @@
             >
               <li>
                 <span>114</span>
-                <svg width="26" height="26">
-                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
-                </svg>
               </li>
               <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>wordwall.net</span></li>
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
@@ -630,12 +561,12 @@
                 <li><span>$129.88</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-pencil"></use>
                       </svg>
                     </li>
-                    <li data-modal-open="modal3">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
                       </svg>
@@ -667,15 +598,12 @@
             >
               <li>
                 <span>115</span>
-                <svg width="26" height="26">
-                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
-                </svg>
               </li>
               <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>wordwall.net</span></li>
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
@@ -730,12 +658,12 @@
                 <li><span>$129.88</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-pencil"></use>
                       </svg>
                     </li>
-                    <li data-modal-open="modal3">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
                       </svg>
@@ -767,15 +695,12 @@
             >
               <li>
                 <span>116</span>
-                <svg width="26" height="26">
-                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
-                </svg>
               </li>
               <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>wordwall.net</span></li>
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
@@ -830,12 +755,12 @@
                 <li><span>$129.88</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-pencil"></use>
                       </svg>
                     </li>
-                    <li data-modal-open="modal3">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
                       </svg>
@@ -867,15 +792,12 @@
             >
               <li>
                 <span>117</span>
-                <svg width="26" height="26">
-                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
-                </svg>
               </li>
               <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>wordwall.net</span></li>
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
@@ -930,12 +852,12 @@
                 <li><span>$129.88</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-pencil"></use>
                       </svg>
                     </li>
-                    <li data-modal-open="modal3">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
                       </svg>
@@ -967,15 +889,12 @@
             >
               <li>
                 <span>118</span>
-                <svg width="26" height="26">
-                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
-                </svg>
               </li>
               <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>wordwall.net</span></li>
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
@@ -1030,12 +949,12 @@
                 <li><span>$129.88</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-pencil"></use>
                       </svg>
                     </li>
-                    <li data-modal-open="modal3">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
                       </svg>
@@ -1067,15 +986,12 @@
             >
               <li>
                 <span>119</span>
-                <svg width="26" height="26">
-                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
-                </svg>
               </li>
               <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>wordwall.net</span></li>
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
@@ -1130,12 +1046,12 @@
                 <li><span>$129.88</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-pencil"></use>
                       </svg>
                     </li>
-                    <li data-modal-open="modal3">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
                       </svg>
@@ -1167,15 +1083,12 @@
             >
               <li>
                 <span>120</span>
-                <svg width="26" height="26">
-                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
-                </svg>
               </li>
               <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>wordwall.net</span></li>
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
@@ -1230,12 +1143,12 @@
                 <li><span>$129.88</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-pencil"></use>
                       </svg>
                     </li>
-                    <li data-modal-open="modal3">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
                       </svg>
@@ -1267,15 +1180,12 @@
             >
               <li>
                 <span>121</span>
-                <svg width="26" height="26">
-                  <use href="./imeges/sprite.svg#icon-check-yellow"></use>
-                </svg>
               </li>
               <li><span>Mithlesha Kumara Singha</span></li>
+              <li><span>wordwall.net</span></li>
               <li><span>Natole, Lalitpur</span></li>
               <li><span>$122</span></li>
               <li><span>$1489</span></li>
-              <li><span>Бренд</span></li>
               <li>
                 <svg width="26" height="26">
                   <use href="./imeges/sprite.svg#icon-bin"></use>
@@ -1330,12 +1240,12 @@
                 <li><span>$129.88</span></li>
                 <li>
                   <ul>
-                    <li data-modal-open="modal2">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-pencil"></use>
                       </svg>
                     </li>
-                    <li data-modal-open="modal3">
+                    <li>
                       <svg width="17" height="17">
                         <use href="./imeges/sprite.svg#icon-settings"></use>
                       </svg>
@@ -1438,86 +1348,66 @@
     </div>
     <div class="backdrop is-hidden" id="modal2" data-modal>
       <div class="modal">
-        <h2>Заміна данних платежу</h2>
+        <h2>Додати офер</h2>
         <form>
           <label>
-            <span>Номер</span>
-            <input type="text" placeholder="...." />
-          </label>
-          <ul>
-            <li>
-              <label
-                ><span>Дата рахунку</span><input type="text" placeholder="****"
-              /></label>
-            </li>
-            <li>
-              <label
-                ><span>Дата оплати</span><input type="text" placeholder="...."
-              /></label>
-            </li>
-          </ul>
-          <label>
-            <span>Статус</span>
+            <span>Назва</span>
             <input type="text" placeholder="...." />
           </label>
           <label>
-            <span>Спосіб оплати</span>
+            <span>Бренд</span>
             <input type="text" placeholder="...." />
           </label>
           <label>
-            <span>Підписка</span>
+            <span>Виплати</span>
             <input type="text" placeholder="...." />
           </label>
           <label>
-            <span>Сума</span>
+            <span>Баланс</span>
             <input type="text" placeholder="...." />
           </label>
-          <ul>
-            <li><button type="button" data-modal-close>Відмінити</button></li>
-            <li><button type="button">Зберегти</button></li>
-          </ul>
-        </form>
-      </div>
-    </div>
-    <div class="backdrop is-hidden" id="modal3" data-modal>
-      <div class="modal">
-        <h2>Внесення коректив платежу</h2>
-        <form>
-          <label>
-            <span>Номер</span>
-            <input type="text" placeholder="...." />
-          </label>
-          <ul>
-            <li>
-              <label
-                ><span>Дата рахунку</span><input type="text" placeholder="****"
-              /></label>
-            </li>
-            <li>
-              <label
-                ><span>Дата оплати</span><input type="text" placeholder="...."
-              /></label>
-            </li>
-          </ul>
-          <label>
-            <span>Статус</span>
-            <input type="text" placeholder="...." />
-          </label>
-          <label>
-            <span>Спосіб оплати</span>
-            <input type="text" placeholder="...." />
-          </label>
-          <label>
-            <span>Підписка</span>
-            <input type="text" placeholder="...." />
-          </label>
-          <label>
-            <span>Сума</span>
-            <input type="text" placeholder="...." />
-          </label>
+          <div class="modal_desktop_menu">
+            <span>Модель оплати</span>
+            <ul>
+              <li>
+                <span>RevShare</span>
+                <p id="p4">%$</p>
+                <svg width="12" height="6" open-paragraf="p4">
+                  <use href="./imeges/sprite.svg#icon-vector"></use>
+                </svg>
+              </li>
+              <li>
+                <span>CPL</span>
+                <p id="p5">$</p>
+                <svg width="12" height="6" open-paragraf="p5">
+                  <use href="./imeges/sprite.svg#icon-vector-black"></use>
+                </svg>
+              </li>
+              <li>
+                <span>CPC</span>
+                <p id="p6">$</p>
+                <svg width="12" height="6" open-paragraf="p6">
+                  <use href="./imeges/sprite.svg#icon-vector-black"></use>
+                </svg>
+              </li>
+              <li>
+                <span>CPM</span>
+              </li>
+              <li>
+                <span>CPH</span>
+              </li>
+            </ul>
+          </div>
           <ul>
             <li><button type="button" data-modal-close>Відмінити</button></li>
-            <li><button type="button">Зберегти</button></li>
+            <li>
+              <button type="button">
+                <svg width="13" height="13">
+                  <use href="./imeges/sprite.svg#icon-plus"></use>
+                </svg>
+                Додати офер
+              </button>
+            </li>
           </ul>
         </form>
       </div>
