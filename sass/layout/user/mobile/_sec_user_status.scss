@@ -18,6 +18,7 @@
       h3 {
         @include font(400, 18px);
         margin: 0;
+        margin-bottom: 28px;
       }
       ul:first-of-type {
         display: flex;

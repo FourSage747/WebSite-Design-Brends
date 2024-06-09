@@ -313,6 +313,7 @@ main {
   font-weight: 400;
   font-size: 18px;
   margin: 0;
+  margin-bottom: 28px;
 }
 .user_status .user_status_div .user_status_normal_div ul:first-of-type {
   display: flex;
