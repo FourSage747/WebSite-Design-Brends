@@ -309,7 +309,7 @@ main {
 .mediaChanel_status .container div ul {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 34px;
 }
 .mediaChanel_status .container div ul b {
   font-weight: 400;
